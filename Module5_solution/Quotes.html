@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Inspirational Quotes</title>
+    <style>
+        p {
+            
+            width: auto;
+            height: auto;
+        }
+
+        body {
+            background-color: #878CA9;
+
+        }
+
+
+        h1 {
+            margin-bottom: 20px;
+            font-family: fantasy;
+            color: #ff0644ee;
+        }
+
+        #quotes {
+        
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: black;
+           
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(20, 153, 219);
+            color: white;
+            text-align: center;
+            opacity: .899;
+            height: 51px;
+        }
+
+
+        /* #quotes :hover {
+            background-color: #0080FF;
+            border: 2px solid #000000;
+        } */
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #212529; opacity: .987; text-shadow: white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="image/logo2.png" width="250" height="35"></a>
+            <button class="navbar-toggler btn btn-outline-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#03B3FA"
+                        class="bi bi-collection-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z" />
+                    </svg></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><button type="button"
+                                class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                                </svg> Home</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="Quotes.html"><button type="button" class="btn btn-outline-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-chat-quote-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z" />
+                            </svg>
+                            Quotes</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Story.html"><button type="button" class="btn btn-outline-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-file-text-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z" />
+                            </svg>   
+                            Story</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- QUOTES.......... -->
+
+    <h1><b>Inspirational Quotes:-</b></h1>
+			<div  id="quotes">
+                 <ul>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>"When I stand before God at the end of my life, I would hope that I would not have a single bit of talent left and could say, I used everything you gave me"</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>"Look at the sparrows; they do not know what they will do in the next moment. Let us literally live from moment to moment."</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>"I am not a product of my circumstances. I am a product of my decisions"</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>"Don’t worry about failures, worry about the chances you miss when you don’t even try."</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>“Be the change that you wish to see in the world.”</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>“We are all in the gutter, but some of us are looking at the stars.”</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>“Do what you can, with what you have, where you are.”</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>"Life is 10% what happens to us and 90% how we react to it."</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>"The great thing in this world is not so much where you stand, as in what direction you are moving."</p></div>
+                     </li>
+                     <li>
+                        <div class="col-lg-3 col-md-6"><p>"I am thankful for all of those who said NO to me. It’s because of them I’m doing it myself."</p></div>
+                     </li>
+				</ul>
+            </div>
+            <br>
+            <br>
+            <br>
+
+             <!-- FOOTER -->
+    
+        <footer class="footer">
+            <div>
+               <a href="https://www.facebook.com/jil.gajera.7" target="_blank"><img src="image/facebook.png" style="margin-right:auto; width: 32px; height: 27px; border-radius: 50%;"></a>
+               <a href="https://www.instagram.com/invites/contact/?i=1qax20u224t0&utm_content=g90aash" target="_blank"><img src="image/instagram.png" style="margin-right:auto; width: 34px; height: 35px; border-radius: 50%;"></a>
+               <a href="https://twitter.com/JeelGajera7" target="_blank"><img src="image/twitter.png" style="margin-right:auto; width: 32px; height: 27px; border-radius: 50%;"></a>
+               <a href="https://wa.me/message/JB4PXAADWYP7F1" target="_blank"><img src="image/whatsapp.png" style="margin-right:auto; width: 32px; height: 30px; border-radius: 50%;"></a>
+               <a href="https://youtube.com/channel/UCkV3ni_KrKXg7ya3BY5bIRw" target="_blank"><img src="image/youtube.png" style="margin-right:auto; width: 36px; height: 35px; border-radius: 50%;;"></a>
+               <a href="https://github.com/JeelGajera" target="_blank"><img src="image/github.png" style=" width: 32px; height: px; border-radius: 50%;"></a>
+               <p style="font-size: x-small; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 780; color: black;" >&COPY;copyright 2020-2021 All rights reserved </p>
+            </div>
+        </footer>
+           
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
